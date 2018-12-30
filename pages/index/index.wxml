@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<!-- 轮播图 -->
+<swiper indicator-dots autoplay circular>
+  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 列表内容 -->
+<view class='list'>
+  <view class='list-item' wx:for="{{list}}" wx:key="{{index}}" bindtap='toDetail' data-index="{{index}}">
+    <image src='/images/pro_01.jpg'></image>
+    <view class='list-item_right'>
+      <view class='list-item_right--title'>{{item.title}}</view>
+      <text>{{item.desc}}</text>
+      <view class='list-item_right--footer'>     
+        <image class='btn-detail' src='/images/btn_detail.png' catchtap='toDetail' data-index="{{index}}"></image>
+        <button open-type="contact" catchtap="handleContact" data-index="{{index}}">
+         <image class='btn-ask' src='/images/btn_ask.png'></image>
+        </button>       
+      </view>
+    </view>
+  </view>
+</view>

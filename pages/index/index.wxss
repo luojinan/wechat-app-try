@@ -1,0 +1,51 @@
+/**index.wxss**/
+
+/* 轮播图样式 */
+/* 注意没有点.（是原生标签） */
+swiper{
+  height: 340rpx;
+  width: 100%;
+}
+swiper image{
+  height: 100%;
+  width: 100%;
+}
+/* 列表内容样式 */
+.list{
+  padding: 30rpx;
+}
+.list-item{
+  display: flex;
+  margin-bottom: 10rpx;
+}
+.list-item image{
+  width: 190rpx;
+  height: 190rpx;
+  border-radius: 5rpx;
+}
+.list-item_right{
+  margin-left: 30rpx;
+}
+.list-item_right .list-item_right--title{
+  font-size: 34rpx;
+  color: #212121;
+  line-height: 1; /*设置行高，兼容不同手机的间距*/
+}
+.list-item_right text{
+  font-size: 28rpx;
+  color: #9a9a0a;
+  line-height: 1.5;
+}
+.list-item_right--footer{
+  display: flex;
+}
+.list-item_right--footer image{
+  width: 170rpx;
+  height: 52rpx;
+}
+.list-item_right--footer button{
+  /* background: url('/images/btn_ask.png'); */
+  margin-left: 10rpx;
+  padding: 0;
+  line-height: 0;
+}

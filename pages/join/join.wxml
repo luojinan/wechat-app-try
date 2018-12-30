@@ -1,0 +1,16 @@
+<!--pages/join/join.wxml-->
+<image class='join-banner' src='/images/about.jpg'></image>
+
+<view class='join-list' wx:for="{{joinList}}" wx:key="{{index}}">
+  <view class='join-list_title'>{{item.title}}</view>
+  <text>{{item.desc}}</text>
+</view>
+
+<view class='join-footer'>
+  <image src="/images/qr_code.jpg"></image>
+  <text>扫描上方二维码</text>
+  <view class='join-footer_btn'>
+    <view bindtap='handleWechat'>微信咨询</view>
+    <view bindtap='handlePhone'>电话咨询</view>
+  </view>
+</view>

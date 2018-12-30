@@ -1,0 +1,71 @@
+/* pages/join/join.wxss */
+
+/*默认包着一层page*/
+page{
+  background-color: #f3f3f3;
+}
+/*头部图片样式*/
+.join-banner{
+  height: 340rpx;
+  width: 100%;
+}
+/* 内容列表样式 */
+.join-list{
+  background-color: #fff;
+  margin-top: 15rpx;
+}
+.join-list_title{
+  position: relative;
+  font-size: 34rpx;
+  line-height: 1.5;
+  color: #225286;
+  padding: 10rpx 20rpx;
+  text-indent: 40rpx;  /*文本缩进*/
+}
+/*使用伪类选择器，相对定位写span*/
+/*因为用到了相对定位且content无值，before和after就都是同一效果了*/
+.join-list_title::before{
+  position: absolute;
+  left: 20rpx;
+  top:10rpx;
+  content: "";  /*可以设置css3内置的符号图标，大小用font-size调*/
+  width: 12rpx;
+  height: 40rpx;
+  background-color: #2e5e86;
+}
+.join-list text{
+  display: block;   /*text标签不是快元素，padding属性会出错*/
+  color: #666;
+  line-height: 1.6;
+  font-size: 30rpx;
+  padding: 0 30rpx 30rpx 30rpx;
+}
+/*底部样式*/
+.join-footer{
+  text-align: center;
+  background-color: #fff;
+}
+.join-footer image{
+  width: 344rpx;
+  height: 344rpx;
+  display: block;
+  margin: 0 auto;
+}
+.join-footer text{
+  font-size: 24rpx;
+  color: #666;
+}
+.join-footer_btn{
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx 20rpx 20rpx 20rpx;
+}
+.join-footer_btn view{
+  width: 344rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 28rpx;
+  border-radius: 20rpx;
+  background-color: #225286;
+  color: #fff;
+}
