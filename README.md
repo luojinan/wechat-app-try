@@ -42,6 +42,6 @@
 ---
 [微信小程序文档](https://developers.weixin.qq.com/miniprogram/dev/quickstart/basic/getting-started.html)：`https://developers.weixin.qq.com/miniprogram/dev/quickstart/basic/getting-started.html`
 
-教程来源：[慕课网](ttps://www.imooc.com/learn/974)`https://www.imooc.com/learn/974` 
+教程来源：[慕课网](https://www.imooc.com/learn/974)`https://www.imooc.com/learn/974` 
 
 [mock.js](https://www.cnblogs.com/xzma/p/7591090.html)来源：`https://www.cnblogs.com/xzma/p/7591090.html`
